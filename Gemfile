@@ -28,6 +28,10 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug'
 
+group :production do
+  # gems specifically for Heroku go here
+  gem "pg"
+end
 
 group :development do
   gem 'rspec-rails', '2.6.1'
